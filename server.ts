@@ -8,13 +8,23 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.get("/dogWalker", (req: Request, res: Response) => {
-  const nameList: string[] = ["Patrik", "Patrik", "Janka", "Janka", "Monika", "Monika", "Zdeno", "Zdeno", ""];
+  const nameList: string[] = [
+    "Patrik",
+    "Patrik",
+    "Janka",
+    "Janka",
+    "Monika",
+    "Monika",
+    "Zdeno",
+    "Zdeno",
+    "",
+  ];
 
-  res.json({ dog_walker: nameList[Math.floor(Math.random() * nameList.length)] });
+  res.json({
+    dog_walker: nameList[Math.floor(Math.random() * nameList.length)],
+  });
 });
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-module.exports = app;
