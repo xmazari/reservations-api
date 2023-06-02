@@ -10,14 +10,9 @@ app.get("/", (req: Request, res: Response) => {
 app.get("/dogWalker", (req: Request, res: Response) => {
   const nameList: string[] = [
     "Patrik",
-    "Patrik",
-    "Janka",
     "Janka",
     "Monika",
-    "Monika",
     "Zdeno",
-    "Zdeno",
-    "",
   ];
 
   res.json({
