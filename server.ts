@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req: Request, res: Response) => {
-  res.json({ available_endpoints: ["/dogWalker", "/isAvailable"] });
+  res.json({ available_endpoints: ["/dogWalker", "/isAvailable", "/roomTypes"] });
 });
 
 app.get("/isAvailable", (req: Request, res: Response) => {
