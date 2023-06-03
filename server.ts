@@ -11,6 +11,10 @@ app.get("/isAvailable", (req: Request, res: Response) => {
   res.json({ is_available: true });
 });
 
+app.get("/roomTypes", (req: Request, res: Response) => {
+  res.json({ available_room_types: "Shared room, Basic private room, Deluxe private room" });
+});
+
 app.get("/dogWalker", (req: Request, res: Response) => {
   const nameList: string[] = [
     "Patrik",
